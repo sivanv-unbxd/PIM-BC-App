@@ -1,0 +1,1 @@
+[30-Apr-2019 23:37:53 America/Chicago] PHP Fatal error:  Class 'Bigcommerce\Api\Resource' not found in /home4/mvp/public_html/bigcomerce/bigcommerce/src/Bigcommerce/Api/Resources/Product.php on line 12

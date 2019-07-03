@@ -1,0 +1,954 @@
+@font-face {
+    font-family: AvenirNext;
+    src: url(/api/v1/fonts/ave_next_ssv/AvenirNext-Bold.ttf);
+    font-weight: bold;
+}
+/* @font-face { */
+    /* font-family: AvenirNext; */
+    /* src: url(/bigcomerce/fonts/ave_next_ssv/AvenirNext-BoldItalic.ttf); */
+    /* font-weight: bold; */
+/* } */
+@font-face { 
+    font-family: AvenirNext;
+    src: url(/api/v1/fonts/ave_next_ssv/AvenirNext-DemiBold.ttf);
+    font-weight: 500;
+}
+/* @font-face { */
+    /* font-family: AvenirNext; */
+    /* src: url(/bigcomerce/fonts/ave_next_ssv/AvenirNext-DemiBoldItalic.ttf); */
+    /* font-weight: 500; */
+/* } */
+@font-face {
+    font-family: AvenirNext;
+    src: url(/api/v1/fonts/ave_next_ssv/AvenirNext-Heavy.ttf);
+    font-weight: bold;
+}
+/* @font-face { */
+    /* font-family: AvenirNext; */
+    /* src: url(/bigcomerce/fonts/ave_next_ssv/AvenirNext-HeavyItalic.ttf); */
+    /* font-weight: Regular; */
+/* } */
+/* @font-face { */
+    /* font-family: AvenirNext; */
+    /* src: url(/bigcomerce/fonts/ave_next_ssv/AvenirNext-Italic.ttf); */
+    /* font-weight: 500; */
+/* } */
+/* @font-face { */
+    /* font-family: AvenirNext; */
+    /* src: url(/bigcomerce/fonts/ave_next_ssv/AvenirNext-MediumItalic.ttf); */
+    /* font-weight: 500; */
+/* } */
+
+div#example_filter input::after {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    content: "";
+    top: 0;
+    right: 0;
+    text-align: center;
+    display: table;
+    z-index: 999999;
+    background-image: url(../images/search-icon.png);
+}  
+.wrapper.f6 ul.nav.nav-tabs {
+    border-bottom: none !important;
+}
+
+div#example_filter label {
+    display: flex;
+    font-family: AvenirNext;
+    font-weight: normal;
+	justify-content: flex-end;
+} 
+
+div#example_filter input {
+    padding: 5px !important;
+    margin-bottom: 10px;
+    bottom: 6px !important;
+    position: relative;
+}
+div#example_length label {
+    font-family: AvenirNext;
+    font-weight: 400;
+}
+table#example td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    height: 16px;
+    font-family: AvenirNext;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+table.dataTable thead th, table.dataTable thead td {
+    font-weight: normal !important;
+    font-family: AvenirNext;
+}
+div#custom-table table#example th.sorting {
+    padding-left: 0px !important;
+}
+div#custom-table table#example tr.odd, div#custom-table table#example tr.odd td {
+    background: #e1e1e1 !important;
+}
+div#custom-table table#example tr.even, div#custom-table table#example tr.even td {
+    background: #efefef !important;
+}
+table.dataTable thead .sorting_desc, table.dataTable thead .sorting {
+    background-image: none !important;
+    padding-left: 10px;
+}
+div#custom-table table#example tr.even > td.sorting_1, div#custom-table table#example tr.odd > td.sorting_1 {
+    padding-left: 40px !important;
+}
+div#custom-table table#example tr.odd td, div#custom-table table#example tr.even td {
+    padding: 18px 0 !important;
+}
+div#example_wrapper table#example tr.odd.parent {
+    background: #e1e1e1 !important;
+}
+tr.child {
+    background-color: #f8f8f8 !important;
+}
+td.child ul li span {
+    font-weight: normal !important;
+    min-width: auto !important;
+}
+td.child ul li {
+    display: inline-block;
+    font-weight: normal !important;
+    padding-right: 40px !important;
+}
+td.child ul li span.dtr-data {
+    font-weight: 500 !important;
+    padding-right: 5px;
+}
+td.child {
+    padding: 10px 50px !important;
+}
+a#report-txt {
+    padding-left: 10px;
+    color: #00bdc7;
+    text-decoration: underline;
+}
+ul.dtr-details {
+    width: 100% !important;
+    border-top: 1px solid #ddd;
+    margin-top: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid #ddd;
+}
+ul.dtr-details li {
+    border: none !important;
+}
+
+div#custom-table tr.odd td::before, div#custom-table tr.even td::before {
+    border: none;
+    background: none;
+    box-shadow: none;
+    content: "" !important;
+    background-image: url(../images/bottom-icon.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: auto !important;
+    left: 10px;
+}
+div#custom-table tr.odd.parent td::before, div#custom-table tr.even.parent td::before {
+    transform: rotate(-90deg) !important;
+}
+
+
+
+
+/*tr.odd.parent td::before, tr.even.parent td::before {
+    background-image: url(http://myvirtualpartner.net/bigcomerce/images/bottom-icon.png) !important;
+    content: '';
+}
+*/
+@font-face {
+    font-family: AvenirNext;
+    src: url(/api/v1/fonts/ave_next_ssv/AvenirNext-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: AvenirNext;
+    src: url(/api/v1/fonts/ave_next_ssv/AvenirNext-UltraLight.ttf);
+    font-weight: 200;
+}
+/* @font-face { */
+    /* font-family: AvenirNext; */
+    /* src: url(/bigcomerce/fonts/ave_next_ssv/AvenirNext-UltraLightItalic.ttf); */
+    /* font-weight: Regular; */
+/* } */
+input[type=text]
+{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  width:200px;
+  min-height: 28px;
+  padding: 4px 20px 4px 8px;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+input[type=text]:focus
+{
+  width: 400px;
+  border-color: #51a7e8;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 0 5px rgba(81,167,232,0.5);
+  outline: none;
+}
+
+.loader {
+    width: 100%;
+    background: #ffffffd4;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+	display:none;
+}
+.loader img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+} 
+.loader_login {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    padding: 10% 0;
+	
+}
+.loader_login p{display:block; text-align:center;}
+#regForm {
+  background-color: #ffffff;
+  margin: 0px auto;
+  font-family: AvenirNext;
+  padding: 37px 40px;
+  width: 70%; 
+  min-width: 300px;
+} 
+#regForm h1 {
+  height: 44px;
+  font-family: AvenirNext;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #445870;
+}
+  #regForm p{  
+    height: 19px;
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+}
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: AvenirNext;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+	margin:0px auto;
+	width:669px;
+}
+.tab label {
+     /* width: 58px; */
+  height: 19px;
+  font-family: AvenirNext;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #445870;
+}
+input[type=text], input[type=password]{width:100% !important;
+  height: 19px;
+  font-family: AvenirNext;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #445870;
+ 
+ }
+.step-btn-wrap {
+    float: left;
+    width: 100%;
+}
+#regForm .tab p:first-child {
+    font-weight: 500;
+    margin-bottom: 15px !important;
+    font-size: 14px;
+}
+.step_btns {
+    float: none !important;
+    text-align: right;
+    margin-top: 15px;
+}
+.dotss {
+    float: left;
+    width: 100%;
+}	
+button {
+  width: 92px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #03aeb8;
+  font-family: AvenirNext;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  border:none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #03aeb8;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #03aeb8;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+#regForm .tab p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 28px;
+    margin-top:46px;
+	margin-bottom:20px;
+}
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #03aeb8;
+}
+
+/* pim form*/
+/* Add padding to containers */
+.container {
+  /*padding: 16px;*/
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 0px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border: solid 1px #dedede;
+    background: none;
+    height: 33px;
+    border-radius: 3px;
+    box-shadow: none;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    width: 282px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #03aeb8;
+    font-size: 14px;
+    font-family: AvenirNext;
+    color: #fff;
+    margin-top: 44px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  text-align: center;
+}
+
+div#model-popup {
+	padding: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20%;
+    width: 50%;
+    background: #fff;
+    z-index: 9;
+}
+div#opn-pop {
+    background: #00000091;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.modal {
+    display: block !important;
+}
+.modal .modal-content{max-width: 450px;
+    margin: 0 auto;
+    top: 35%; text-align:Center}
+.frst-frm, .scnd-frm {
+    display: block;
+    padding: 12px 21px 21px 21px;
+    margin-bottom: 24px;
+	width: 669px;
+  height: 311px;
+  border: solid 1px #bfbfbf;
+  
+}
+.frst-frm p, .scnd-frm p {
+    margin: 0 !important;
+}
+.form-wrpr {
+    margin: 0 auto;
+    padding: 27px 48px;
+    width: 526px;
+    height: 386px;
+    border-radius: 7px;
+    border: solid 1px #979797;
+    background-color: #ffffff;
+}
+select#org_name {
+    padding: 0px 20px;
+    width: 282px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #c8d0da;
+    background-color: #ffffff;
+    margin: 10px auto;
+}
+.wrpr-main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
+.d-block{
+	width:100%;
+}
+form.m0{
+	margin:0;
+}
+.form-wrpr h2 {
+    margin: 0 0 20px 0;
+	width: 80px;
+  height: 38px;
+  font-family: AvenirNext;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #445870;
+}
+.form-wrpr label{
+    width: 100px;
+    height: 19px;
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+	margin:8px 0px;
+}
+.form-wrpr label b {
+	 font-weight: normal !important;
+}
+.dataTables_wrapper .dataTables_length {
+    float: right !important;   
+}
+.dataTables_wrapper .dataTables_filter {
+    float: left !important;   
+    text-align: left !important;   
+}
+.hdng {
+    margin: 0px 0px 47px 0px;
+}
+.hdng h1 {
+    margin: 0;
+}
+.buton{
+	background:#03aeb8;
+}
+.f6{
+	background:#f6f6f6;
+}
+.nav-tabs{
+	border:none;
+}
+/* body .backbtn a, body .backbtn a:hover, body .backbtn a:focus { */
+    /* background: #5c7185 !important;    */
+/* } */
+.backbtn a .back-icon {
+    width: 26px;
+    /* filter: invert(1); */
+	
+}
+.nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+    border: none;
+    box-shadow: -11px 6px 21px 1px rgba(173, 182, 217, 0.2);
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0fa2c5;
+}
+.wrapper.f6 {
+    background: transparent !important;
+}
+.tab-pane.in.active {
+    background: #fff;
+    padding: 30px 15px;
+    box-shadow: 0px 6px 21px 1px rgba(173, 182, 217, 0.36);
+}
+.nav-tabs li a {
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8399ae;
+}
+.top-sec .sub-head {
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #03aeb8;
+    margin: 0;
+}
+.top-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.mng-head {
+    height: 19px;
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+    padding: 20px 0px;
+}
+.tbl-head {
+    background: #5c7185;
+    height: 33px;
+	color:#fff;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #e1e1e1;
+}
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #efefef;
+}
+.tbl-body tr td{
+	color:#000;
+}
+.fold{display:none;}
+.fold.open {
+    display: table-row;
+    background-color: #f8f8f8 !important;
+}
+.smry-list {
+    list-style: none;
+    width: 70%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.smry-list-item{display:inline-table; margin: 0px 15px;}
+.dtls-wrpr {
+    padding: 10px 50px;
+}
+.dtls-wrpr hr {
+    margin: 15px 0px;
+    border: 1px solid #cecece;
+}
+.prdt-smry {
+    margin: 0px 0px 22px 0px;
+}
+.inner-table tbody td {
+    border-top: none !important;
+}
+a.show-details {
+    color: #b5b5b5;
+}
+.view.open .glyphicon-triangle-bottom{
+	display:block;
+}
+.view .glyphicon-triangle-bottom{
+	display:none;
+}
+.view.open .glyphicon-triangle-right{
+	display:none;
+}
+.show-details{text-decoration:none;}
+.wdth{
+	width:max-content;   
+	margin-right: 7px;
+    margin-top: 0;
+}
+.wrapper_signup {
+    height: 100%;
+    margin: 50px 0px;
+}
+a#importt {
+    text-decoration: none;
+    color: white;
+   
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+a#import {
+    text-decoration: none;
+    color: white;
+    background: #03aeb8; 
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+#import i {
+    color: #03aeb8;
+    font-size: 27px;
+}
+span.inst {
+    font-size: 10px;
+    color: #5c7185;
+}
+h5.hd-inst {
+    font-size: 17px;
+    font-weight: 500;
+	color:#445870;
+}
+#regform .tab .instruction-list {
+    margin: 30px 0px 0px 0px;
+}
+#regform .tab ol.instruction-list {
+    padding: 0px 15px;
+}
+.step_btns #prevBtn {
+    border: solid 1px #03aeb8;
+    background: #fff;
+    color: #03aeb8;
+}
+.signin p {
+    height: 14px;
+    font-family: AvenirNext;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00bdc7;
+	margin-top:16px;
+}
+.signin p a {
+    font-weight: 500;
+    color: #00bdc7;
+}
+.sign-up-form-wrpr {
+    width: 532px;
+    height: 648px;
+    border-radius: 7px;
+    border: solid 1px #979797;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 27px 48px;
+}
+.sign-up-form-wrpr h2 {
+    height: 38px;
+    font-family: AvenirNext;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+    margin: 0 0 20px;
+    padding: 0;
+}
+.sign-up-form-wrpr label {
+    height: 19px;
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+}
+span.trm-cdn {
+    margin-top: 20px;
+    height: 14px;
+    display: block;
+    font-family: AvenirNext;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #589acc;
+}
+input.wdth {
+    margin-right: 6px;
+    vertical-align: text-bottom;
+}
+.registerbtn {
+    width: 434px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #03aeb8;
+    font-size: 14px;
+    font-family: AvenirNext;
+    color: #fff;
+    margin-top: 53px;
+    margin-bottom: 16px;
+}
+.form-wrpr1{
+  width: 532px;
+  height: 382px;
+  border-radius: 7px;
+  border: solid 1px #979797;
+  background-color: #ffffff;
+  padding:115px 125px;
+}
+.form-wrpr1 p {
+    height: 19px;
+    font-family: AvenirNext;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+}
+.form-wrpr1 .registerbtn {
+    width: 282px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #03aeb8;
+    margin-top: 49px;
+}
+.prdt-smry p {
+    height: 16px;
+    font-family: AvenirNext;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+}
+.tbl-body td {
+    height: 16px;
+    font-family: AvenirNext;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+}
+.tbl-body td span {
+    font-weight: 500;
+}
+.asst-smry p{
+  height: 16px;
+  font-family: AvenirNext;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #445870;
+  margin-bottom:8px;
+}
+.inner-table th {
+    height: 16px;
+    font-family: AvenirNext;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #445870;
+}
+.inner-table .frstth {
+    width: 425px;
+    padding-left: 60px !important;
+}
+.inner-table th, .inner-table td {
+    padding: 0 !important;
+}
+div#example_wrapper {
+    width: 97%;
+    margin: 0 auto;
+}
+.cust_table_cls {
+    width: 90% !important;
+}
+#example_wrapper .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #e1e1e1;
+}
+#example_wrapper .table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #efefef;
+}
+.backbtn {
+    padding: 20px 0px;
+    position: relative;
+}
+.backbtn a, .backbtn a:hover,.backbtn a:focus {
+    background: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: #03aeb8;
+    margin: 20px;
+	text-decoration:none;
+}
+
+
+
+.btn-wrpr {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.container1 {
+    width: 680px;
+    margin: 0 auto;
+}
+
+.dtr-data a {
+    color: #00bdc7;
+}
